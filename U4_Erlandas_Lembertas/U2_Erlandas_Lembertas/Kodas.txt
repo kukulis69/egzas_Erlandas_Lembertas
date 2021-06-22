@@ -1,0 +1,54 @@
+//Nespejau 5iu duomenu ikisti i db, bet kode yra (same kaip ir 1as)
+
+//sukuriam kursai
+CREATE table kursai(
+   mokslas VARCHAR(100) NOT NULL,
+   Datadata TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+   Pavadinimas VARCHAR(100) NOT NULL,
+   kAprasymas VARCHAR(200) NOT NULL,
+   dAprasymas VARCHAR(2000) NOT NULL,
+   ImgLink VARCHAR(100),
+   Populiarumas INT,
+   Komentaro_ID INT AUTO_INCREMENT PRIMARY KEY,
+   Kaina INT,
+   Reitingas INT
+);
+//sukuriam komentarai
+CREATE table komentarai(
+   commentID INT NOT NULL,
+   comment VARCHAR(200) NOT NULL
+);
+//idedam duomenis i kursai
+INSERT INTO kursai (mokslas, Pavadinimas, kAprasymas, dAprasymas, ImgLink, Populiarumas, Kaina, Reitingas)
+VALUES ('Birute', 'Santechnikas', 'Vamzdziu myletojas', 'Gali atkimsti vamzdzius.', 'https://www.kaunosantechnikas.lt/wp-content/uploads/revslider/plumber1/home_plumber_slider_image.png', '10', '1000$', '10')
+//idedam duomenis i komentarai
+INSERT INTO komentarai (Komentaro_ID, Komentaras)
+VALUES ('1', 'bl bla bla')
+
+//idedam duomenis i kursai
+INSERT INTO kursai (mokslas, Pavadinimas, kAprasymas, dAprasymas, ImgLink, Populiarumas, Kaina, Reitingas)
+VALUES ('Antanas', 'Aukletokja', 'Myli suniukus', 'Gali but su vaikais.', 'https://p0.pikist.com/photos/746/352/baby-sitter-children-educator-nanny-kindergarten-teacher-building-blocks-play-child-children-kindergarten.jpg', '10', '1000$', '10')
+//idedam duomenis i komentarai
+INSERT INTO komentarai (Komentaro_ID, Komentaras)
+VALUES ('2', 'bl bla bla')
+
+//idedam duomenis i kursai
+INSERT INTO kursai (mokslas, Pavadinimas, kAprasymas, dAprasymas, ImgLink, Populiarumas, Kaina, Reitingas)
+VALUES ('Kestas', 'Sesele', 'Stippriai', 'Gali atkimsti ka reikia.', 'https://s1.15min.lt/images/photos/2017/10/20/big/lauren-drain-59ea07300d810.jpg', '10', '1000$', '10')
+//idedam duomenis i komentarai
+INSERT INTO komentarai (Komentaro_ID, Komentaras)
+VALUES ('3', 'bl bla bla')
+
+//idedam duomenis i kursai
+INSERT INTO kursai (mokslas, Pavadinimas, kAprasymas, dAprasymas, ImgLink, Populiarumas, Kaina, Reitingas)
+VALUES ('Petriukas', 'padauza', 'jo', 'Gali.', 'https://www.kaunosantechnikas.lt/wp-content/uploads/revslider/plumber1/home_plumber_slider_image.png', '10', '1000$', '10')
+//idedam duomenis i komentarai
+INSERT INTO komentarai (Komentaro_ID, Komentaras)
+VALUES ('4', 'bl bla bla')
+
+//idedam duomenis i kursai
+INSERT INTO kursai (mokslas, Pavadinimas, kAprasymas, dAprasymas, ImgLink, Populiarumas, Kaina, Reitingas)
+VALUES ('Birute', 'Santechnikas', 'Vamzdziu myletojas', 'Gali atkimsti vamzdzius.', 'https://www.kaunosantechnikas.lt/wp-content/uploads/revslider/plumber1/home_plumber_slider_image.png', '10', '1000$', '10')
+//idedam duomenis i komentarai
+INSERT INTO komentarai (Komentaro_ID, Komentaras)
+VALUES ('5', 'bl bla bla')
